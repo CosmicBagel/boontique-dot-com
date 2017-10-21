@@ -12,6 +12,25 @@
                 padding: 1.5em 6em 0 6em
             }
 
+            hr {
+                height: 30px; 
+                border-style: solid; 
+                border-color: #8c8b8b; 
+                border-width: 1px 0 0 0; 
+                border-radius: 20px; 
+            }
+
+            hr::before {
+                display: block; 
+                content: ""; 
+                height: 30px; 
+                margin-top: -31px; 
+                border-style: solid; 
+                border-color: #8c8b8b; 
+                border-width: 0 0 1px 0; 
+                border-radius: 20px; 
+            }
+
             @media screen and (max-device-width: 480px)
             {
                 h1 {
@@ -33,7 +52,8 @@
         <p>Ask <a href="mailto:an_actual_human@boontique.com?subject=GIMMIE%20SHAMPOO" target="_top">an_actual_human@boontique.com</a>
            about some world-class shampoo, conditioner, and hair styling goodness.
         </p>
-        <p>DON'T WAIT TILL IT'S TOO LATE</p>
+        
+        <p>Enjoy this simulation of what waiting will do</p>
         <video preload="auto"  muted="muted" loop="loop">
             <source src="https://i.imgur.com/LEc75cN.mp4" >
         </video>
