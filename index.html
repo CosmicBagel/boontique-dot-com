@@ -1,61 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>b o o n t i q u e</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <style>
-            * {
-                font-family: "Lato", sans-serif;
-            }
 
+<head>
+    <title>b o o n t i q u e</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Lato", sans-serif;
+        }
+
+        body {
+            padding: 1.5em 6em 0 6em
+        }
+
+        hr {
+            height: 30px;
+            border-style: solid;
+            border-color: #8c8b8b;
+            border-width: 1px 0 0 0;
+            border-radius: 20px;
+        }
+
+        hr::before {
+            display: block;
+            content: "";
+            height: 30px;
+            margin-top: -31px;
+            border-style: solid;
+            border-color: #8c8b8b;
+            border-width: 0 0 1px 0;
+            border-radius: 20px;
+        }
+
+        @media screen and (max-device-width: 480px) {
+            h1 {
+                font-size: 4em;
+            }
+            p {
+                font-size: 1.1em;
+            }
             body {
-                padding: 1.5em 6em 0 6em
+                padding: 1.5em 4em 0 4em
             }
+        }
 
-            hr {
-                height: 30px; 
-                border-style: solid; 
-                border-color: #8c8b8b; 
-                border-width: 1px 0 0 0; 
-                border-radius: 20px; 
-            }
+        .headerLink:link {
+            color: black;
+            text-decoration: none;
+        }
 
-            hr::before {
-                display: block; 
-                content: ""; 
-                height: 30px; 
-                margin-top: -31px; 
-                border-style: solid; 
-                border-color: #8c8b8b; 
-                border-width: 0 0 1px 0; 
-                border-radius: 20px; 
-            }
+        /* visited link */
 
-            @media screen and (max-device-width: 480px)
-            {
-                h1 {
-                    font-size: 4em;
-                }
-                p {
-                    font-size: 1.1em;
-                }
-                body {
-                    padding: 1.5em 4em 0 4em
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <h1>b o o n t i q u e</h1>
-        <hr/>
-        <p><a href="https://www.instagram.com/boontique/">We have one of those instagram things</a></p>
-        <p>Ask <a href="mailto:an_actual_human@boontique.com?subject=GIMMIE%20SHAMPOO" target="_top">an_actual_human@boontique.com</a>
-           about some world-class shampoo, conditioner, and hair styling goodness.
+        .headerLink:visited {
+            color: black;
+        }
+
+        /* mouse over link */
+
+        .headerLink:hover {
+            color: red;
+        }
+
+        /* selected link */
+
+        .headerLink:active {
+            color: yellow;
+        }
+
+        .niceLinks a:link {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* visited link */
+
+        .niceLinks a:visited {
+            color: black;
+        }
+
+        /* mouse over link */
+
+        .niceLinks a:hover {
+            color: red;
+        }
+
+        /* selected link */
+
+        .niceLinks a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="float:left;">b o o n t i q u e</h1>
+    <h3 style="float:right;">
+        <a href="https://www.instagram.com/boontique/" class="headerLink">Instagram</a>
+    </h3>
+
+    <hr style="clear:both;" />
+    <div class="niceLinks">
+        <p>Ask
+            <a href="mailto:an_actual_human@boontique.com?subject=GIMMIE%20SHAMPOO" target="_top">an_actual_human@boontique.com</a>
+            about some world-class shampoo, conditioner, and hair styling goodness. 80% of all profits go to
+            <a href="http://boylestreet.org/">Boyle Street</a>.
         </p>
-        
-        <p>Enjoy this simulation of what waiting will do</p>
-        <video preload="auto" autoplay=""  muted="muted" loop="loop">
-            <source src="https://i.imgur.com/LEc75cN.mp4" >
-        </video>
-    </body>
+        <p>
+            Currently we are delivering only to the MacEwan Campus area (this includes the campus residence). We accept cash or eTransfers.
+        </p>
+        <p>
+            <h3>We currently offer:</h3>
+            <ul>
+                <li>
+                    VERB Ghost Oil - $12 CAD
+                </li>
+                <li>
+                    VERB Ghost Shampoo - $15 CAD
+                </li>
+                <li>VERB Ghost Conditioner - $15 CAD</li>
+                <li>Schwarzkopf Coal Putty - $12 CAD</li>
+                <li>Schwarzkopf Molding Paste - $12 CAD</li>
+            </ul>
+        </p>
+    </div>
+</body>
+
 </html>
